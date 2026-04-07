@@ -41,6 +41,11 @@ p {
     color: rgb(253, 228, 251);
 }
 
+.title a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .subtitle {
     margin: 0;
     color: rgb(85, 85, 85);
