@@ -4,13 +4,26 @@
 <meta charset="UTF-8">
 <title>404 Not Found</title>
 <style>
-    body { text-align: center; font-family: sans-serif; margin-top: 50px; }
-    h1 { font-size: 80px; color: #f00; }
+  body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+  h1 { font-size: 80px; color: #f00; }
 </style>
 </head>
 <body>
-    <h1>404</h1>
-    <p>Page not found</p>
-    <a href="/">Go home</a>
+  <h1>404</h1>
+  <p id="message"></p>
+  <a href="index.html">Go home</a>
+
+  <script>
+    // Get the current URL path
+    let path = window.location.pathname;
+
+    // Strip leading slash if you want just the filename
+    if (path.startsWith("/")) path = path.substring(1);
+
+    // If empty, show "Home" instead
+    if (!path) path = "Home";
+
+    document.getElementById("message").textContent = `Page "${path}" not found.`;
+  </script>
 </body>
 </html>
