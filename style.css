@@ -86,7 +86,7 @@ button:active {
     transform: translateY(1px);
 }
 
-#log-in {
+.empty_btn {
     border-color: rgb(247, 0, 255);
     background-color: rgba(20, 20, 20, 0.2);
 }
